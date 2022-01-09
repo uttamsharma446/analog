@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anolog Clock</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pushster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="rod"></div>
+      <div class="calendar">
+        <div
+          style="
+            width: 200px;
+            height: 200px;
+            background-image: url(calendar.png);
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+          "
+        >
+          <label class="month"></label>
+          <label class="date"></label>
+          <label class="day"></label>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="dot"></div>
+        <div class="title">Analog Clock</div>
+        <div class="hand hours"></div>
+        <div class="hand min"></div>
+        <div class="hand sec"></div>
+        <div class="num number-12">12</div>
+        <div class="num number-1">1</div>
+        <div class="num number-2">2</div>
+        <div class="num number-3">3</div>
+        <div class="num number-4">4</div>
+        <div class="num number-5">5</div>
+        <div class="num number-6">6</div>
+        <div class="num number-7">7</div>
+        <div class="num number-8">8</div>
+        <div class="num number-9">9</div>
+        <div class="num number-10">10</div>
+        <div class="num number-11">11</div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

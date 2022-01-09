@@ -1,0 +1,181 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Pushster", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-image: url(hero.jpg);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  padding: 10px;
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+}
+.rod {
+  width: 100%;
+  background: #d3dedc;
+  box-shadow: 1px 1px 10px 1px #92a9bd;
+  position: absolute;
+  top: 2%;
+
+  height: 10px;
+}
+.calendar {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  color: #ffff;
+  width: 200px;
+  height: 200px;
+  background-image: url(calendar.png);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+}
+.month {
+  font-family: "Times New Roman", Times, serif;
+  padding: 25px 0 10px 0;
+  font-size: 20px;
+}
+.day {
+  font-family: "Times New Roman", Times, serif;
+
+  font-weight: bold;
+  color: #000;
+
+  font-size: 20px;
+}
+.date {
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+}
+.clock {
+  /* width: 100 */
+  min-width: 600px;
+  height: 600px;
+  border: 1px solid #041c32;
+  position: relative;
+  background-color: #1a374d;
+  border-width: 10px;
+  border-radius: 100%;
+  box-shadow: -1px 3px 30px 3px #b1d0e0;
+}
+.hand {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  z-index: 1;
+  top: 50%;
+  background-color: #fff;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hand.hours {
+  height: 8px;
+  width: 27%;
+  left: 23%;
+}
+.hand.min {
+  height: 9px;
+  width: 32%;
+  left: 18%;
+}
+.hand.sec {
+  height: 5px;
+  width: 50%;
+  left: 10%;
+  top: 50%;
+
+  transform-origin: 80%;
+  background-color: red;
+}
+
+.dot {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #ff8e00;
+  top: 49%;
+  left: 48.5%;
+  z-index: 9999;
+}
+.title {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  font-family: "Times New Roman", Times, serif;
+
+  color: white;
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 0.5px #406882;
+}
+.num {
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 36px;
+  color: white;
+}
+.number-12 {
+  left: 47%;
+  top: 8%;
+}
+.number-1 {
+  left: 67%;
+  top: 14%;
+}
+.number-2 {
+  left: 82%;
+  top: 27%;
+}
+.number-3 {
+  left: 88%;
+  top: 47%;
+}
+.number-4 {
+  left: 82%;
+  top: 65%;
+}
+.number-5 {
+  left: 67%;
+  top: 78%;
+}
+.number-6 {
+  left: 47%;
+  bottom: 8%;
+}
+.number-7 {
+  right: 67%;
+  top: 78%;
+}
+.number-8 {
+  right: 82%;
+  top: 65%;
+}
+.number-9 {
+  right: 88%;
+  top: 47%;
+}
+.number-10 {
+  right: 82%;
+  top: 27%;
+}
+.number-11 {
+  right: 67%;
+  top: 14%;
+}
